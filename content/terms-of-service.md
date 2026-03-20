@@ -3,7 +3,7 @@ title = "Terms of Service"
 description = "The Feliciterra Terms of Service governing access to and use of services and applications hosted at feliciterra.com and feliciterra.net."
 +++
 
-*Last updated: March 2026*
+_Last updated: March 2026_
 
 ---
 
@@ -132,4 +132,4 @@ Questions, concerns, or requests regarding these Terms should be directed to the
 
 ---
 
-*By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you've read this far and you're not a Turney, we genuinely admire your thoroughness.*
+_By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you've read this far and you're not a Turney, we genuinely admire your thoroughness._

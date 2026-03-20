@@ -3,7 +3,7 @@ title = "Privacy Policy"
 description = "The Feliciterra Privacy Policy governing the use of services and applications hosted at feliciterra.com and feliciterra.net."
 +++
 
-*Last updated: March 2026*
+_Last updated: March 2026_
 
 ---
 
@@ -90,4 +90,4 @@ Questions about this Privacy Policy? Contact the Feliciterra network administrat
 
 ---
 
-*This Privacy Policy is governed by and construed in accordance with the laws of the Turney household, supplemented where necessary by common sense and good faith.*
+_This Privacy Policy is governed by and construed in accordance with the laws of the Turney household, supplemented where necessary by common sense and good faith._
