@@ -5,15 +5,21 @@
   "scripts": {
     "format": "oxfmt --check .",
     "format:fix": "oxfmt .",
-    "lint:css": "stylelint \"static/**/*.css\"",
-    "lint:css:fix": "stylelint --fix \"static/**/*.css\"",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:css:fix": "stylelint --fix \"src/**/*.css\"",
+    "build:css": "tailwindcss -i src/input.css -o static/style.css",
+    "build:css:watch": "tailwindcss -i src/input.css -o static/style.css --watch",
+    "build:css:minify": "tailwindcss -i src/input.css -o static/style.css --minify",
     "version": "changeset version",
     "release": "changeset tag"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
+    "@tailwindcss/cli": "^4.0.0",
+    "@tailwindcss/typography": "^0.5.0",
     "oxfmt": "^0.41.0",
     "stylelint": "^16.0.0",
-    "stylelint-config-standard": "^37.0.0"
+    "stylelint-config-standard": "^37.0.0",
+    "tailwindcss": "^4.0.0"
   }
 }

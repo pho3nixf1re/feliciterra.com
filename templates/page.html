@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock
+description %} {% block content %}
+<main class="max-w-3xl mx-auto px-4 py-12">
+  <article
+    class="prose prose-stone prose-headings:text-terra-700 prose-a:text-terra-600 hover:prose-a:text-terra-700 prose-hr:border-terra-200 max-w-none"
+  >
+    <h1>{{ page.title }}</h1>
+    {{ page.content | safe }}
+  </article>
+</main>
+{% endblock content %}

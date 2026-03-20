@@ -1,7 +1,71 @@
-{% extends "base.html" %} {% block title %}{{ config.title }}{% endblock title %} {% block content
-%}
-<main>
-  <h1>{{ config.title }}</h1>
-  <p>{{ config.description }}</p>
+{% extends "base.html" %} {% block title %}{{ config.title }} &mdash; The Turney Family Network{%
+endblock title %} {% block description %}The private home for the Turney family network, services,
+and applications hosted at feliciterra.com and feliciterra.net.{% endblock description %} {% block
+content %}
+<main class="max-w-4xl mx-auto px-4 py-16">
+  <div class="text-center mb-16">
+    <div class="flex justify-center mb-6">
+      <img
+        src="{{ config.extra.monogram_url }}"
+        alt="Feliciterra monogram"
+        class="w-24 h-24 rounded-full ring-4 ring-terra-200 shadow-lg"
+      />
+    </div>
+    <h1 class="text-4xl sm:text-5xl font-bold text-terra-700 mb-4">Welcome to Feliciterra</h1>
+    <p class="text-xl sm:text-2xl text-terra-600 font-medium mb-6">The Turney Family Network</p>
+    <p class="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
+      A private network of services, applications, and shared resources — built with care for the
+      Turney family, by the Turney family (well, mostly by one Turney, but the family gets full
+      credit for the moral support).
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+    <div class="bg-white rounded-xl border border-terra-100 p-6 shadow-sm">
+      <div class="text-terra-500 text-2xl mb-3">&#127968;</div>
+      <h2 class="text-lg font-semibold text-terra-700 mb-2">Family First</h2>
+      <p class="text-stone-600 text-sm leading-relaxed">
+        All services and applications hosted here are exclusively for members of the Turney family
+        and the Feliciterra network. This is not a public utility — it&rsquo;s a digital home.
+      </p>
+    </div>
+    <div class="bg-white rounded-xl border border-terra-100 p-6 shadow-sm">
+      <div class="text-forest-500 text-2xl mb-3">&#128274;</div>
+      <h2 class="text-lg font-semibold text-terra-700 mb-2">Private &amp; Secure</h2>
+      <p class="text-stone-600 text-sm leading-relaxed">
+        Access is private and restricted. If you&rsquo;re reading this and your last name
+        isn&rsquo;t Turney (or you haven&rsquo;t been officially welcomed into the network), this
+        isn&rsquo;t for you. No hard feelings.
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-xl border border-terra-100 p-6 shadow-sm sm:col-span-2 lg:col-span-1"
+    >
+      <div class="text-terra-500 text-2xl mb-3">&#9881;&#65039;</div>
+      <h2 class="text-lg font-semibold text-terra-700 mb-2">Homelab Powered</h2>
+      <p class="text-stone-600 text-sm leading-relaxed">
+        Running on genuine homelab infrastructure — lovingly assembled, occasionally rebooted at 2
+        AM, and kept alive through sheer determination. Uptime is a suggestion, not a guarantee.
+      </p>
+    </div>
+  </div>
+
+  <div class="bg-terra-100 border border-terra-200 rounded-xl p-6 text-center">
+    <p class="text-terra-700 font-medium mb-1">Hosted at feliciterra.com &amp; feliciterra.net</p>
+    <p class="text-stone-600 text-sm">
+      All services across both domains are governed by our
+      <a
+        href="/privacy-policy/"
+        class="text-terra-600 hover:text-terra-700 underline underline-offset-2"
+        >Privacy Policy</a
+      >
+      and
+      <a
+        href="/terms-of-service/"
+        class="text-terra-600 hover:text-terra-700 underline underline-offset-2"
+        >Terms of Service</a
+      >.
+    </p>
+  </div>
 </main>
 {% endblock content %}
