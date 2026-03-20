@@ -1,0 +1,12 @@
+{
+  "name": "feliciterra.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "version": "changeset version",
+    "release": "changeset tag"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0"
+  }
+}
