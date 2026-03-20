@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    outputs:
+      published: ${{ steps.changesets.outputs.published }}
 
     steps:
       - name: Checkout
@@ -25,9 +27,18 @@ jobs:
         run: npm install
 
       - name: Create Release PR or tag
+        id: changesets
         uses: changesets/action@v1
         with:
           version: npm run version
           publish: npm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: release
+    if: needs.release.outputs.published == 'true'
+    uses: ./.github/workflows/deploy.yml
+    secrets: inherit
+    permissions:
+      contents: read
