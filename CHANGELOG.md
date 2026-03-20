@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.1
+
+### Patch Changes
+
+- [#6](https://github.com/pho3nixf1re/feliciterra.com/pull/6) [`24c3cd0`](https://github.com/pho3nixf1re/feliciterra.com/commit/24c3cd0f1bbbe03c55cde4c895428030b582e676) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Fix release to create version and deploy
+
 ## 1.0.0
 
 ### Major Changes
