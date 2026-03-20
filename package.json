@@ -3,10 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "format": "oxfmt --check .",
+    "format:fix": "oxfmt .",
+    "lint:css": "stylelint \"static/**/*.css\"",
+    "lint:css:fix": "stylelint --fix \"static/**/*.css\"",
     "version": "changeset version",
     "release": "changeset tag"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.0"
+    "@changesets/cli": "^2.27.0",
+    "oxfmt": "^0.41.0",
+    "stylelint": "^16.0.0",
+    "stylelint-config-standard": "^37.0.0"
   }
 }
