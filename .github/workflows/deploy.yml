@@ -41,6 +41,6 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
           aws s3 sync public/ s3://${{ vars.S3_BUCKET }} \
-            --endpoint-url https://s3.feliciterra.net \
-            --region feliciterra \
+            --endpoint-url ${{ vars.S3_ENDPOINT_URL }} \
+            --region ${{ vars.AWS_REGION }} \
             --delete
