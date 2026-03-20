@@ -1,4 +1,4 @@
-base_url = "https://feliciterra.com"
+base_url = "https://www.feliciterra.com"
 title = "Feliciterra"
 description = "feliciterra.com"
 compile_sass = false

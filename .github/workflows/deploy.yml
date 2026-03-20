@@ -22,7 +22,7 @@ jobs:
           docker run --rm \
             -v "$PWD:/site" -w /site \
             ghcr.io/getzola/zola:latest \
-            build --base-url "${{ vars.SITE_BASE_URL || 'https://feliciterra.com' }}"
+            build --base-url "${{ vars.SITE_BASE_URL || 'https://www.feliciterra.com' }}"
 
       - name: Deploy to Garage S3
         env:
