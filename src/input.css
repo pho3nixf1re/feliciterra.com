@@ -1,18 +1,23 @@
 @import "tailwindcss";
 
+@import "../static/custom.css";
+
 @plugin "@tailwindcss/typography";
 
 @source "../templates/**/*.html";
 @source "../content/**/*.md";
 
+@theme inline {
+  --color-terra-50: var(--color-terra-50);
+  --color-terra-100: var(--color-terra-100);
+  --color-terra-200: var(--color-terra-200);
+  --color-terra-500: var(--color-terra-500);
+  --color-terra-600: var(--color-terra-600);
+  --color-terra-700: var(--color-terra-700);
+  --color-forest-500: var(--color-forest-500);
+  --color-forest-600: var(--color-forest-600);
+}
+
 @theme {
-  --color-terra-50: #fdf8f4;
-  --color-terra-100: #f5e6d8;
-  --color-terra-200: #e9c9ae;
-  --color-terra-500: #c2622d;
-  --color-terra-600: #a84f22;
-  --color-terra-700: #8c3e18;
-  --color-forest-500: #4a7c59;
-  --color-forest-600: #3d6b4a;
   --font-sans: system-ui, sans-serif;
 }

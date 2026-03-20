@@ -1,7 +1,7 @@
 base_url = "https://www.feliciterra.com"
 title = "Feliciterra"
 description = "The Turney Family Network"
-compile_sass = false
+compile_sass = true
 minify_html = false
 generate_feeds = false
 

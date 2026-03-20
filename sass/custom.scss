@@ -1,0 +1,13 @@
+@use "variables" as vars;
+
+// Expose theme colors as CSS custom properties for Tailwind @theme inline
+:root {
+  --color-terra-50: #{vars.$terra-50};
+  --color-terra-100: #{vars.$terra-100};
+  --color-terra-200: #{vars.$terra-200};
+  --color-terra-500: #{vars.$terra-500};
+  --color-terra-600: #{vars.$terra-600};
+  --color-terra-700: #{vars.$terra-700};
+  --color-forest-500: #{vars.$forest-500};
+  --color-forest-600: #{vars.$forest-600};
+}
