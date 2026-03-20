@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+@source "../templates/**/*.html";
+@source "../content/**/*.md";
+
+@theme {
+  --color-terra-50: #fdf8f4;
+  --color-terra-100: #f5e6d8;
+  --color-terra-200: #e9c9ae;
+  --color-terra-500: #c2622d;
+  --color-terra-600: #a84f22;
+  --color-terra-700: #8c3e18;
+  --color-forest-500: #4a7c59;
+  --color-forest-600: #3d6b4a;
+  --font-sans: system-ui, sans-serif;
+}

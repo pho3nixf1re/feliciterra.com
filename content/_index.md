@@ -1,4 +1,4 @@
 +++
 title = "Feliciterra"
-description = "feliciterra.com"
+description = "The private home for the Turney family network, services, and applications."
 +++

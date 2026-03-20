@@ -11,7 +11,44 @@
     <link rel="icon" href="https://public.assets.feliciterra.com/monogram.jpg" type="image/jpeg" />
     <link rel="stylesheet" href="{{ get_url(path='style.css') | safe }}" />
   </head>
-  <body>
-    {% block content %}{% endblock content %}
+  <body class="bg-terra-50 text-stone-900 font-sans min-h-screen flex flex-col">
+    <header class="bg-terra-700 text-white shadow-md">
+      <div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3 no-underline">
+          <img
+            src="https://public.assets.feliciterra.com/monogram.jpg"
+            alt="Feliciterra monogram"
+            class="w-9 h-9 rounded-full ring-2 ring-terra-200"
+          />
+          <span class="text-xl font-semibold tracking-wide">Feliciterra</span>
+        </a>
+        <span class="text-terra-200 text-sm hidden sm:block">The Turney Family Network</span>
+      </div>
+    </header>
+
+    <div class="flex-1">
+      {% block content %}{% endblock content %}
+    </div>
+
+    <footer class="bg-terra-700 text-terra-100 mt-12">
+      <div class="max-w-4xl mx-auto px-4 py-8">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p class="text-sm text-terra-200">
+            &copy; {{ now() | date(format="%Y") }} Feliciterra &mdash; The Turney Family Network.
+            All rights reserved by the family, for the family.
+          </p>
+          <nav class="flex gap-6 text-sm">
+            <a
+              href="/privacy-policy/"
+              class="text-terra-200 hover:text-white transition-colors duration-150"
+            >Privacy Policy</a>
+            <a
+              href="/terms-of-service/"
+              class="text-terra-200 hover:text-white transition-colors duration-150"
+            >Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
