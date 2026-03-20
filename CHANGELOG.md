@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.2
+
+### Patch Changes
+
+- [#8](https://github.com/pho3nixf1re/feliciterra.com/pull/8) [`500cb17`](https://github.com/pho3nixf1re/feliciterra.com/commit/500cb1785b44eca193d84c9455acfbe086a71bd8) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Incorrect targeting for tags prevents deploy from running
+
 ## 1.0.1
 
 ### Patch Changes
