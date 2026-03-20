@@ -1,6 +1,0 @@
-services:
-  site:
-    image: ${SITE_IMAGE}
-    ports:
-      - "${SITE_PORT:-8080}:8080"
-    restart: unless-stopped
