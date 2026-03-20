@@ -11,7 +11,7 @@
     "build:css:watch": "tailwindcss -i src/input.css -o static/style.css --watch",
     "build:css:minify": "tailwindcss -i src/input.css -o static/style.css --minify",
     "version": "changeset version",
-    "release": "node -e \"const {execSync}=require('child_process');const v=require('./package.json').version;execSync('git tag v'+v,{stdio:'inherit'});\""
+    "release": "changeset tag"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.0",
