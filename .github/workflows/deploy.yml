@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     tags:
-      - "feliciterra.com@*"
+      - "v*"
 
 jobs:
   deploy:
