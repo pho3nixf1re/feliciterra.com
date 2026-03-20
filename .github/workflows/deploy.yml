@@ -17,12 +17,13 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install Zola
+        uses: taiki-e/install-action@v2
+        with:
+          tool: zola
+
       - name: Build site with Zola
-        run: |
-          docker run --rm \
-            -v "$PWD:/site" -w /site \
-            ghcr.io/getzola/zola:latest \
-            build --base-url "${{ vars.SITE_BASE_URL || 'https://www.feliciterra.com' }}"
+        run: zola build --base-url "${{ vars.SITE_BASE_URL || 'https://www.feliciterra.com' }}"
 
       - name: Deploy to Garage S3
         env:
