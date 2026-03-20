@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.3
+
+### Patch Changes
+
+- [#10](https://github.com/pho3nixf1re/feliciterra.com/pull/10) [`25f6a49`](https://github.com/pho3nixf1re/feliciterra.com/commit/25f6a49f67e0eb93de9ec73a22be52a2c9b14e4d) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Fix deploy workflow not running after changeset release
+
 ## 1.0.2
 
 ### Patch Changes
