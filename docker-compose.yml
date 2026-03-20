@@ -1,0 +1,18 @@
+services:
+  site:
+    image: ${SITE_IMAGE}
+    ports:
+      - "${SITE_PORT:-8080}:8080"
+    restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower:latest
+    restart: unless-stopped
+    environment:
+      WATCHTOWER_POLL_INTERVAL: ${WATCHTOWER_POLL_INTERVAL:-300}
+      WATCHTOWER_CLEANUP: "true"
+      REPO_USER: ${GHCR_USER}
+      REPO_PASS: ${GHCR_TOKEN}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: site
