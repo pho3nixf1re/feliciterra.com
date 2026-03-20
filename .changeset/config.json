@@ -1,6 +1,11 @@
 {
   "$schema": "https://unpkg.com/@changesets/config/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "pho3nixf1re/feliciterra.com"
+    }
+  ],
   "commit": false,
   "fixed": [],
   "linked": [],
