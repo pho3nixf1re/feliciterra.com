@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
 
       - name: Setup mise
-        uses: jdx/mise-action@v2
+        uses: jdx/mise-action@v4
 
       - name: Install dependencies
         run: npm ci
@@ -33,14 +33,14 @@ jobs:
           tool: zola
 
       - name: Build site with Zola
-        run: zola build --base-url "${{ vars.SITE_BASE_URL || 'https://www.feliciterra.com' }}"
+        run: zola build
 
       - name: Deploy to Garage S3
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: |
-          aws s3 sync public/ s3://${{ vars.S3_BUCKET }} \
-            --endpoint-url ${{ vars.S3_ENDPOINT_URL }} \
-            --region ${{ vars.AWS_REGION }} \
+          aws s3 sync public/ s3://${{ secrets.S3_BUCKET }} \
+            --endpoint-url ${{ secrets.S3_ENDPOINT_URL }} \
+            --region ${{ secrets.AWS_REGION }} \
             --delete
