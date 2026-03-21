@@ -53,10 +53,10 @@ jobs:
           tool: zola
 
       - name: Build site with Zola
-        run: zola build --base-url "https://www.feliciterra.com"
+        run: zola build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site-${{ github.event.pull_request.number }}
           path: public/
