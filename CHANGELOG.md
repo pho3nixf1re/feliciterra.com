@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.4
+
+### Patch Changes
+
+- [#13](https://github.com/pho3nixf1re/feliciterra.com/pull/13) [`531eb33`](https://github.com/pho3nixf1re/feliciterra.com/commit/531eb33575e5920b413a2f64581c719164d66a77) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Force a deploy for testing
+
 ## 1.0.3
 
 ### Patch Changes
