@@ -1,6 +1,6 @@
 {
   "name": "feliciterra.com",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "private": true,
   "scripts": {
     "format": "oxfmt --check .",
