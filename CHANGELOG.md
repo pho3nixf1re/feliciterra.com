@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.7
+
+### Patch Changes
+
+- [#20](https://github.com/pho3nixf1re/feliciterra.com/pull/20) [`7e9f460`](https://github.com/pho3nixf1re/feliciterra.com/commit/7e9f46043612ccf2aaa5ffb3e269233ba6cbabcb) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Disallow robots from crawling
+
 ## 1.0.6
 
 ### Patch Changes
