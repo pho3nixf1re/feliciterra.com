@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.5
+
+### Patch Changes
+
+- [#15](https://github.com/pho3nixf1re/feliciterra.com/pull/15) [`a479eb1`](https://github.com/pho3nixf1re/feliciterra.com/commit/a479eb125fb14f5a4e04cc706f0a5c0e6bf7524c) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Update github actions
+
 ## 1.0.4
 
 ### Patch Changes
