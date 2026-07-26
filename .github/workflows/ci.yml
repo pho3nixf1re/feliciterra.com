@@ -27,6 +27,9 @@ jobs:
       - name: Lint CSS (stylelint)
         run: npm run lint:css
 
+      - name: Lint Markdown (markdownlint)
+        run: npm run lint:md
+
   build:
     runs-on: ubuntu-latest
     permissions:
