@@ -1,5 +1,11 @@
 # feliciterra.com
 
+## 1.0.8
+
+### Patch Changes
+
+- [#22](https://github.com/pho3nixf1re/feliciterra.com/pull/22) [`a7fb088`](https://github.com/pho3nixf1re/feliciterra.com/commit/a7fb088f1785a584b2ed48d372b1148b3f58c76c) Thanks [@pho3nixf1re](https://github.com/pho3nixf1re)! - Add documentation for both humans and AI agents
+
 ## 1.0.7
 
 ### Patch Changes
