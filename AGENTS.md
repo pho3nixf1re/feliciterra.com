@@ -12,16 +12,16 @@ analytics, or anything intended to make the site more discoverable.
 
 ## Tech stack
 
-| Layer | Tool | Notes |
-| --- | --- | --- |
-| Static site generator | [Zola](https://www.getzola.org/) | Rust-based; config in `zola.toml` |
-| Templating | Tera | Jinja2-like syntax; templates in `templates/` |
-| CSS | Tailwind CSS **v4** | Entry point: `src/input.css` |
-| CSS typography | `@tailwindcss/typography` | Used for legal page prose |
-| Node | 24.14 | Pinned via `mise` (`.mise.toml`) |
-| Formatting | `oxfmt` | Not Prettier — run via `npm run format` |
-| CSS linting | `stylelint` | Config in `.stylelintrc.json` |
-| Versioning | Changesets | Do not manually edit the version in `package.json` |
+| Layer                 | Tool                             | Notes                                              |
+| --------------------- | -------------------------------- | -------------------------------------------------- |
+| Static site generator | [Zola](https://www.getzola.org/) | Rust-based; config in `zola.toml`                  |
+| Templating            | Tera                             | Jinja2-like syntax; templates in `templates/`      |
+| CSS                   | Tailwind CSS **v4**              | Entry point: `src/input.css`                       |
+| CSS typography        | `@tailwindcss/typography`        | Used for legal page prose                          |
+| Node                  | 24.14                            | Pinned via `mise` (`.mise.toml`)                   |
+| Formatting            | `oxfmt`                          | Not Prettier — run via `npm run format`            |
+| CSS linting           | `stylelint`                      | Config in `.stylelintrc.json`                      |
+| Versioning            | Changesets                       | Do not manually edit the version in `package.json` |
 
 ## Build process
 
@@ -53,7 +53,7 @@ This project uses **Tailwind CSS v4**, which is substantially different from v3:
 - Use `@import "tailwindcss"` — not `@tailwind base/components/utilities`.
 - Custom design tokens are declared with CSS custom properties inside `@theme {}`.
 - The stylelint config allowlist includes `plugin, source, theme, utility,
-  variant, slot` — these are valid Tailwind v4 at-rules, not errors.
+variant, slot` — these are valid Tailwind v4 at-rules, not errors.
 
 When suggesting CSS changes, use v4 syntax. Do not introduce a
 `tailwind.config.js` or v3-style config.
