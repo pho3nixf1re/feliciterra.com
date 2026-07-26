@@ -13,7 +13,7 @@ analytics, or anything intended to make the site more discoverable.
 ## Tech stack
 
 | Layer | Tool | Notes |
-|---|---|---|
+| --- | --- | --- |
 | Static site generator | [Zola](https://www.getzola.org/) | Rust-based; config in `zola.toml` |
 | Templating | Tera | Jinja2-like syntax; templates in `templates/` |
 | CSS | Tailwind CSS **v4** | Entry point: `src/input.css` |
@@ -69,7 +69,7 @@ Stick to these when adding or changing UI. The full token list is in `src/input.
 
 ## Template structure
 
-```
+```text
 templates/
   base.html    — shared layout (header, footer, stylesheet link)
   index.html   — home page; extends base.html
@@ -82,7 +82,7 @@ available in templates.
 
 ## Content
 
-```
+```text
 content/
   _index.md           — home page front matter (rendered by index.html)
   privacy-policy.md   — rendered by page.html via Tailwind Typography

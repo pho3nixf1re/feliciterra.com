@@ -63,6 +63,7 @@ nix develop --command zola serve
 ```sh
 npm run format      # check formatting (oxfmt)
 npm run lint:css    # lint CSS (stylelint)
+npm run lint:md     # lint Markdown (markdownlint)
 ```
 
 ## CI / Deployment
